@@ -23,6 +23,7 @@ spring:
             - Path=/api/accounts/**
           filters:
             - StripPrefix=1
+            - TokenRelay
 #      discovery:
 #        locator:
 #          enabled: true

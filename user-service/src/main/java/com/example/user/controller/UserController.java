@@ -3,6 +3,7 @@ package com.example.user.controller;
 import com.example.user.entity.User;
 import com.example.user.service.UserService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -18,12 +19,14 @@ public class UserController {
     }
 
     @PostMapping("/register")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<User> register(@RequestBody User user) {
         userService.register(user);
         return ResponseEntity.ok(user);
     }
 
     @GetMapping("/{username}")
+    @PreAuthorize("hasRole('USER')")
     public ResponseEntity<User> getUser(@PathVariable String username) {
         Optional<User> user = userService.findByUsername(username);
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
