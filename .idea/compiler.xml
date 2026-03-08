@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-keycloak-microservices.account-service" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.account-service.main" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.account-service.test" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.api-gateway" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.api-gateway.main" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.api-gateway.test" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.service-registry" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.service-registry.main" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.service-registry.test" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.user-service" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.user-service.main" options="-parameters" />
+      <module name="spring-boot-keycloak-microservices.user-service.test" options="-parameters" />
+    </option>
+  </component>
+</project>

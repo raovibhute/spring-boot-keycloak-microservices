@@ -1,0 +1,6 @@
+rootProject.name = 'spring-boot-keycloak-microservices'
+
+include 'service-registry'
+include 'user-service'
+include 'account-service'
+include 'api-gateway'
