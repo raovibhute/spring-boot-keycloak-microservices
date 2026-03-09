@@ -242,7 +242,7 @@ Add **@EnableEurekaServer** annotation on ServiceRegistryApplication class (root
 
 #### Clone the repository
   ```text
-  git clone https://github.com/your-repo-url.git
+  git clone https://github.com/raovibhute/spring-boot-keycloak-microservices.git
   cd your-project
   ```
 #### Build all services
